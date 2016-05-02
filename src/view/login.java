@@ -295,6 +295,11 @@ public class login extends javax.swing.JFrame {
                 lupaButtonMouseClicked(evt);
             }
         });
+        lupaButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lupaButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout logInPanelLayout = new javax.swing.GroupLayout(logInPanel);
         logInPanel.setLayout(logInPanelLayout);
@@ -1058,7 +1063,9 @@ public class login extends javax.swing.JFrame {
 
         jLabel34.setText("Stok");
 
-        newTahunSpinner.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(2015), null, null, Integer.valueOf(1)));
+        newTahunSpinner.setModel(new javax.swing.SpinnerNumberModel(2015, null, null, 1));
+        newTahunSpinner.setRequestFocusEnabled(false);
+        newTahunSpinner.setValue(2016);
 
         errorNewDvdLabel.setText("jLabel7");
 
@@ -2290,6 +2297,10 @@ public class login extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void lupaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lupaButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lupaButtonActionPerformed
 
     /**
      * @param args the command line arguments
