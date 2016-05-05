@@ -22,7 +22,7 @@ public class Database {
     
         public void connect(){
             try{
-                connection = DriverManager.getConnection("jdbc:mysql://localhost/tes","root","");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost/rentaldvddb","root","");
                 statement = connection.createStatement();
             }catch(Exception e){
                 JOptionPane.showMessageDialog(null, ""+e.getMessage(),"Connection Error",JOptionPane.WARNING_MESSAGE);
